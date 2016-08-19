@@ -1,6 +1,11 @@
-.PHONY: examples
 
-examples: $(foreach x,coverletter cv resume,examples/$x.pdf)
+all: cv.pdf
 
 %.pdf: %.tex
-	xelatex -output-directory=$(dir $@) $<
+	xelatex $<
+
+
+.PHONY: clean
+
+clean:
+	rm -rf *.aux *.out *.log *.pdf
