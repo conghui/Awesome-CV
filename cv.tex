@@ -99,10 +99,22 @@
 
 %---------------------------------------------------------
   \cventry
+    {Ph.D. Candidate in Department of Computer Science and Technology} % Degree
+    {Tsinghua University} % Institution
+    {Beijing, China} % Location
+    {Aug. 2013 - PRESENT} % Date(s)
+    {
+      \begin{cvitems} % Description(s) bullet points
+        \item {A member of High Performance Geoscience Computing Group (HPGC) in Tsinghua University (http://thuhpgc.org)}
+        \item {My research mainly focus on computational geophysics and financial applications on reconfigurable platforms}
+      \end{cvitems}
+    }
+    
+  \cventry
     {Visiting PhD student in Custom Computing Group} % Degree
     {Imperial College} % Institution
     {London, UK} % Location
-    {Nov. 2016 - PRESENT} % Date(s)
+    {Nov. 2016 - May. 2017} % Date(s)
     {
       \begin{cvitems} % Description(s) bullet points
         \item {Supervisor: Wayne Luk (https://www.doc.ic.ac.uk/~wl/)}      
@@ -122,17 +134,7 @@
       \end{cvitems}
     }
 
-  \cventry
-    {Ph.D. Candidate in Department of Computer Science and Technology} % Degree
-    {Tsinghua University} % Institution
-    {Beijing, China} % Location
-    {Aug. 2013 - PRESENT} % Date(s)
-    {
-      \begin{cvitems} % Description(s) bullet points
-        \item {I am a member of High Performance Geoscience Computing Group (HPGC) in Tsinghua University (http://thuhpgc.org)}
-        \item {My research mainly focus on computational geophysics and financial applications on reconfigurable platforms}
-      \end{cvitems}
-    }
+
 
   \cventry
     {B.S. in Software Engineering} % Degree
@@ -153,7 +155,7 @@
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cvskills}
-
+%
 %---------------------------------------------------------
   \cvskill
     {Programming} % Category
@@ -162,12 +164,12 @@
 %---------------------------------------------------------
   \cvskill
     {HPC} % Category
-    {Profiling, Optimization, Pthread, OpenMP, MPI, GPU, FPGA} % Skills
+    {Profiling, Optimization, Pthread, OpenMP, MPI, Sunway, GPU, FPGA} % Skills
 
 %---------------------------------------------------------
   \cvskill
     {Geophysics} % Category
-    {Modeling, Reverse Time Migration (RTM), Full Waveform Inversion (FWI), Beam, Seismology} % Skills
+    {Seismic Modeling, Reverse Time Migration (RTM), Full Waveform Inversion (FWI), Beam Migration} % Skills
     
   \cvskill
     {Finance} % Category
@@ -194,6 +196,13 @@
 %-------------------------------------------------------------------------------
 \begin{cvhonors}
 
+%---------------------------------------------------------
+  \cvhonor
+    {Finalist} % Award
+    {Gordon Bell Prize Finalist} % Event
+    {ACM} % sponsor
+    {2017} % Date(s)
+    
 %---------------------------------------------------------
   \cvhonor
     {Scholarship} % Award
@@ -248,32 +257,33 @@
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cventries}
-
-%---------------------------------------------------------
-  \cventry
-    {Intern in Networking Group} % Job title
-    {Maxeler Ltd} % Organization
-    {London, UK} % Location
-    {Nov. 2016 - PRESENT} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Following the MaxMPT project collaborated with Chicago Mercantile Exchange (CME)}
-      \end{cvitems}
-    }
     
 %---------------------------------------------------------
   \cventry
     {Software Engineer \& HPC Researcher} % Job title
     {National Supercomputing Center in Wuxi} % Organization
     {Wuxi, China} % Location
-    {Feb. 2016 - Nov. 2017} % Date(s)
+    {Feb. 2016 - PRESENT} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Optimize geophysics applications on the new Sunway manycore supercomputer}
-        \item {15-Pflops Nonlinear Earthquake Simulation on Sunway TaihuLight: Enabling Depiction of Realistic 10 Hz Scenarios}
+        \item {18.9-Pflops Nonlinear Earthquake Simulation on Sunway TaihuLight : Enabling Depiction of 18-Hz and 8-Meter Scenarios}
         \item {Refactor and optimize the Community Atmosphere Model (CAM) on the new Sunway manycore supercomputer}
       \end{cvitems}
     }
+    
+%---------------------------------------------------------
+  \cventry
+    {Intern in Networking Group} % Job title
+    {Maxeler Ltd} % Organization
+    {London, UK} % Location
+    {Nov. 2016 - May. 2017} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Following the MaxMPT project collaborated with Chicago Mercantile Exchange (CME)}
+      \end{cvitems}
+    }
+
 
 %---------------------------------------------------------
   \cventry
@@ -309,10 +319,37 @@
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cvparagraph}
-My interests include computational geophysics and parallel algorithms. I'm experienced in parallel algorithm designs on heterogeneous architectures like GPU, multi-core CPU, and FPGA processors to solve computational challenges raised from geoscience applications. I am also interested in novel designs for financial applications on reconfigurable platforms. Participated projects include:
+My interests include computational geophysics and parallel algorithms. I'm experienced in parallel algorithm designs on heterogeneous architectures like the Sunway supercomputer, GPU, multi-core CPU, and FPGA processors to solve computational challenges raised from geoscience applications. I am also interested in novel designs for financial applications on reconfigurable platforms. Participated projects include:
 \end{cvparagraph}
 
 \begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Topic leader} % Job title
+    {18.9-Pflops Nonlinear Earthquake Simulation on Sunway TaihuLight: Enabling Depiction of 18-Hz and 8-Meter Scenarios} % Organization
+    {Research} % Location
+    {Nov. 2016 - August. 2017} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {This paper reports our large-scale nonlinear earthquake simulation software on Sunway TaihuLight. Our innovations include: (1) a customized parallelization scheme that employs the 10 million cores efficiently at both the process and the thread levels; (2) an elaborate memory scheme that integrates on-chip halo exchange through register communcation, optimized blocking configuration guided by an analytic model, and coalesced DMA access with array fusion; (3) on-the-fly compression that doubles the maximum problem size and further improves the performance by 24\%. With these innovations to remove the memory constraints of Sunway TaihuLight, our software achieves over 15\% of the system's peak, better than the 11.8\% efficiency achieved by a similar software running on Titan, whose byte to flop ratio is 5 times better than TaihuLight. The extreme cases demonstrate a sustained performance of over 18.9 Pflops, enabling the simulation of Tangshan earthquake as an 18-Hz scenario with an 8-meter resolution.}
+       \item {Related work is accepted by \textbf{SC17'}, nominated as \textbf{Gordon Bell Prize Finalist}}
+      \end{cvitems}
+    }
+      
+%---------------------------------------------------------
+  \cventry
+    {Topic leader} % Job title
+    {A Fully-Pipelined Hardware Design for Gaussian Mixture Models} % Title
+    {Research} % Location
+    {Apr. 2015 - April. 2017} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Gaussian Mixture Models (GMMs) are widely used in many applications such as data mining, signal processing and computer vision, for probability density modeling and soft clustering. However, the parameters of a GMM need to be estimated from data by, for example, the Expectation-Maximization algorithm for Gaussian Mixture Models (EM-GMM), which is computationally demanding. This paper presents a novel design for the EM-GMM algorithm targeting reconfigurable platforms, with five main contributions.  First, a pipeline-friendly EM-GMM with diagonal covariance matrices that can easily be mapped to hardware architectures. Second, a function evaluation unit for Gaussian probability density based on fixed-point arithmetic. Third, our approach is extended to support a wide range of dimensions or/and components by fitting multiple pieces of smaller dimensions onto an FPGA chip. Fourth, we derive a cost and performance model that estimates logic resources. Fifth, our dataflow design targeting the Maxeler MPC-X2000 with a Stratix-5SGSD8 FPGA can run over 200 times faster than a 6-core Xeon E5645 processor, and over 39 times faster than a Pascal TITAN-X GPU.  Our design provides a practical solution to applications for training and explores better parameters for GMMs with hundreds of millions of high dimensional input instances, for low-latency and high-performance applications.}
+        \item {Related work is published in \textbf{IEEE Transactions on Computers (TC)}}
+      \end{cvitems}
+    }
+
 
 %---------------------------------------------------------
   \cventry
@@ -323,47 +360,20 @@ My interests include computational geophysics and parallel algorithms. I'm exper
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {We design an FPGA-based accelerated approach to market data processing, with an FPGA connected directly to the network to parse, split, filter the financial packets, and then push the market data feeds directly to the network after reconstructions of order books. Such a solution offers flexibility, as the FPGA can be reconfigured for different protocols and market processing logic, and high throughput with extremely low latency by eliminating the operating system's interrupts and network stacks. This work proposes a hybrid sorted table design for minimizing electronic trading latency, with three main contributions. First, a hierarchical sorted table with two levels, a fast cache table in reconfigurable hardware storing megabytes of data items and a master table in software storing gigabytes of data items. Second, a full set of operations, including insertion, deletion, selection and sorting, for the hybrid table with latency in a few cycles.  Third, an on-demand synchronization scheme between the cache table and the master table. An implementation has been developed that targets an FPGA-based network card in the environment of the China Financial Futures Exchange (CFFEX) which sustains 1-10Gb/s bandwidth with latency of 400 to 700 nanoseconds, providing an 80- to 125-fold latency reduction compared to a fully optimized CPU-based solution, and a 2.2-fold reduction over an existing FPGA-based solution.}
-       \item {Related work is published in FPGA17', FCCM17'}
+       \item {Related work is published in \textbf{FPGA17'}, \textbf{FCCM17'}, \textbf{FPL17'}}
       \end{cvitems}
     }
-
-%---------------------------------------------------------
-  \cventry
-    {Project leader} % Job title
-    {15-Pflops Nonlinear Earthquake Simulation on Sunway TaihuLight: Enabling Depiction of Realistic 10 Hz Scenarios} % Organization
-    {Research} % Location
-    {Nov. 2016 - Apr. 2017} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {This paper reports our work on building a highly efficient earthquake simulation platform on Sunway TaihuLight, with 125 Pflops computing power and over 10 million cores. With the platform originated from AWP-ODC and CG-FDM, a large part of our efforts focuses on redesigning the velocity, stress, and plasticity processing kernels for the completely different microarchitecture and significantly increased parallelism of Sunway TaihuLight. By a combined approach that includes (1) an optimized parallelization scheme, (2) the most suitable blocking configuration, (3) fusion of co-located arrays, (4) register communication with CPE ID remapping for halo exchanges, and (5) customized ROM-less evaluation of elementary function, we manage to achieve an efficient utilization of over 12.5\% of the theoretical peak of the entire system. Our simulation program provides a sustained performance of over 15 Pflops, and enables the simulation of the Tangshan earthquake with a spatial resolution of 25 m and a frequency of 10 Hz.}
-       \item {Related work is submitted to SC17', Gordon Bell Prize}
-      \end{cvitems}
-    }
-  
-%---------------------------------------------------------
-  \cventry
-    {Topic leader} % Job title
-    {A Fully-Pipelined Hardware Design for Gaussian Mixture Models} % Title
-    {Research} % Location
-    {Apr. 2015 - April. 2017} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Gaussian Mixture Models (GMMs) are widely used in many applications such as data mining, signal processing and computer vision, for probability density modeling and soft clustering. However, the parameters of a GMM need to be estimated from data by, for example, the Expectation-Maximization algorithm for Gaussian Mixture Models (EM-GMM), which is computationally demanding. This paper presents a novel design for the EM-GMM algorithm targeting reconfigurable platforms, with five main contributions.  First, a pipeline-friendly EM-GMM with diagonal covariance matrices that can easily be mapped to hardware architectures. Second, a function evaluation unit for Gaussian probability density based on fixed-point arithmetic. Third, our approach is extended to support a wide range of dimensions or/and components by fitting multiple pieces of smaller dimensions onto an FPGA chip. Fourth, we derive a cost and performance model that estimates logic resources. Fifth, our dataflow design targeting the Maxeler MPC-X2000 with a Stratix-5SGSD8 FPGA can run over 200 times faster than a 6-core Xeon E5645 processor, and over 39 times faster than a Pascal TITAN-X GPU.  Our design provides a practical solution to applications for training and explores better parameters for GMMs with hundreds of millions of high dimensional input instances, for low-latency and high-performance applications.}
-        \item {Related work is accepted by IEEE Transactions on Computers}
-      \end{cvitems}
-    }
-
 
 %---------------------------------------------------------
   \cventry
     {Project leader, collaborated with Stanford University} % Job title
-    {Approximating Q propagations for elastic modeling on GPUs} % Organization
+    {Approximating Q Propagations for Elastic Modeling on GPUs} % Organization
     {Research} % Location
     {July. 2016 - Jan. 2017} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Propagating wavefields using the explicit finite difference method is the kernel of reverse time migration (RTM) and high-end velocity algorithms in seismic applications. In recent decades there has been a significant increase of interest in the seismic exploration community to invert the image of the subsurface in larger regions and higher resolutions in the elastic media, which brings tremendous computing challenges. As a result, the optimizing methods for improving the performance of the wavefield propagation are in great demands. This work manages to boost the performance of the wavefield propagation in 3D elastic scenarios by approximating the Q propagation and using the multi-GPU platform. We first extend the constant-Q formulation from the 2D viscoelastic case to the 3D viscoelastic case. Different optimization techniques on GPUs are then described for an efficient modeling kernel. We also propose a set of schemes to reduce the computation to further improve the performance. The experimental results show that we can achieve significant performance speedups of 60 to 200 times with 4 GPUs over the CPU-based solution as a function of Q.​}
-       \item {Related work is published in EAGE17'}
+       \item {Related work is published in \textbf{EAGE17'}}
       \end{cvitems}
     }
   
@@ -376,7 +386,7 @@ My interests include computational geophysics and parallel algorithms. I'm exper
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {We refactor and optimize the Community Atmosphere Model (CAM) on the new Sunway many-core supercomputer of China, which is the rank 1 supercomputer in the latest Top 500 announcement. It uses a many-core processor that consists of management processing elements (MPEs) and clusters of computing processing elements (CPEs). To tackle the major challenges of mapping the large code base of CAM to the millions of cores on the Sunway system, we take OpenACC-based refactorization as the major tool, and apply source-to-source translator tools to generate the most suitable parallelism for the CPE cluster, and to fit the intermediate variable into the limited on-chip fast buffer. For single kernels, when comparing the originally ported version using only MPEs and the refactorized version using both the MPE and CPE clusters, we achieve up to 22x speedup for the compute-intensive kernels. For the 25km resolution CAM global model, we manage to scale to 24,000 MPEs, and 1,536,000 CPEs and achieve a simulation speed of 2.81 model years per day.}
-        \item {Related work is published in SC16'}
+        \item {Related work is published in \textbf{SC16'}}
       \end{cvitems}
     }
 
@@ -389,7 +399,7 @@ My interests include computational geophysics and parallel algorithms. I'm exper
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Full waveform inversion (FWI) suffers from convergence toward local minima because of the inaccuracy of the initial model and the lack of low frequency data. Noises in seismograms further deteriorate the imaging quality. To relax the dependency on high-quality low-frequency data, we present an ensemble full waveform inversion method with source encoding (EnFWI), which is an ensemble approximation of the total inversion proposed by Tarantola. The method refines the velocity model iteratively by incorporating the observation, while the nonlinear evolution of the covariance is approximated by ensemble covariance. Encoded simultaneous-source FWI (ESSFWI) is applied to improve the representation for the low rank ensemble approximation, and to increase the rate of convergence. Experiments show that EnFWI achieves larger convergence range and better tolerance to data noise with less computational costs than traditional FWI methods.}
-        \item {Related work is published in SEG16'}
+        \item {Related work is published in \textbf{SEG16'}}
       \end{cvitems}
     }
 
@@ -402,7 +412,7 @@ My interests include computational geophysics and parallel algorithms. I'm exper
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {The Kirchhoff beam-stack migration is quite popular in production with both better image quality and faster speed compared to Kirchhoff migration.  However, the beam forming step and beam mapping step are still expensive. Meanwhile, continuous High Performance Computing (HPC) developments offer new opportunities for the industry to further enhance the efficiency of beam migration methods. We present a design of a highly efficient CPU-GPU hybrid beam migration.  By parallelizing both the beam forming and the beam mapping routines with millions of GPU threads and using an asynchronous IO scheme, we derive a parallel beam migration design that fits current CPU-GPU hybrid clusters.  Then, we test our GPU-based beam migration on the SEG/EAGE salt model and the SEAM salt model for different generations of GPU architectures, presenting accurate imaging results with 4-12 times speedup compared to a parallel 16-core CPU design. The significant performance improvement would further close the gap to an interactive migration engine.}
-        \item {Related work is published in EAGE15'}
+        \item {Related work is published in \textbf{EAGE15'}}
       \end{cvitems}
     }
     
@@ -415,7 +425,7 @@ My interests include computational geophysics and parallel algorithms. I'm exper
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Startup Project for Ph.D. candidate cooperated with a Professor in Remote Sensing field, aiming to accelerate the algorithm taking months to finish. Optimization strategies for it include modifying the algorithm to reduce I/O accessing by utilizing local buffer, adding a memory pool to reduce frequent memory allocation/destruction, overlapping I/O transferring and computing. It gained 20x speedup in the end.}
-        \item {Related work is published in the journal of Remote Sensing}
+        \item {Related work is published in \textbf{Remote Sensing}}
       \end{cvitems}
       %\begin{cvsubentries}
       %  \cvsubentry{}{KNOX(Solution for Enterprise Mobile Security) Penetration Testing}{Sep. 2013}{}
@@ -428,13 +438,33 @@ My interests include computational geophysics and parallel algorithms. I'm exper
 
 \cvsection{International Conference \& Visit}
 \begin{cvhonors}
+%---------------------------------------------------------
+  \cvhonor
+    {Speaker} % Award
+    {27th International Conference on Field-Programmable Logic and Applications} % Event
+    {Gent, Belgium} % sponsor
+    {Sep, 2017} % Date(s)
+    
+%---------------------------------------------------------
+  \cvhonor
+    {Speaker} % Award
+    {77th Society of Exploration Geophysicists (SEG) Annual Meeting} % Event
+    {Paris, France} % sponsor
+    {Jun, 2017} % Date(s)
 
 %---------------------------------------------------------
   \cvhonor
     {Speaker} % Award
-    {IEEE International Symposium on Field-Programmable Custom Computing Machines} % Event
+    {25th International Symposium on Field-Programmable Custom Computing Machines} % Event
     {Napa, USA} % sponsor
-    {April, 2017} % Date(s)
+    {Apr, 2017} % Date(s)
+    
+%---------------------------------------------------------
+  \cvhonor
+    {Intern} % Award
+    {Maxeler Technologies} % Event
+    {London, UK} % sponsor
+    {Nov, 2016} % Date(s)
     
 %---------------------------------------------------------
   \cvhonor
@@ -460,7 +490,7 @@ My interests include computational geophysics and parallel algorithms. I'm exper
 %---------------------------------------------------------
   \cvhonor
     {Speaker} % Award
-    {Society of Exploration Geophysicists (SEG) Annual Meeting 2015} % Event
+    {85th Society of Exploration Geophysicists (SEG) Annual Meeting} % Event
     {New Orleans, USA}
     {Oct, 2015} % Date(s)
 
@@ -474,7 +504,7 @@ My interests include computational geophysics and parallel algorithms. I'm exper
 %---------------------------------------------------------
   \cvhonor
     {Speaker} % Award
-    {European Association of Geoscientists and Engineers (EAGE) 2015} % Event
+    {77th European Association of Geoscientists and Engineers (EAGE)} % Event
     {Madrid, Spain} % Location
     {Jun, 2015} % Date(s)
 %---------------------------------------------------------
@@ -490,23 +520,30 @@ My interests include computational geophysics and parallel algorithms. I'm exper
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cvparagraph}
-[1] Conghui He, Haohuan Fu, Ce Guo, Wayne Luk and Guangwen Yang. "A Fully-Pipelined Hardware Design for Gaussian Mixture Models." IEEE Transactions on Computers (Accepted, not published yet).
 
-[2] Fu, Haohuan, Conghui He, Wayne Luk, Weijia Li, and Guangwen Yang. "A Nanosecond-level Hybrid Table Design for Financial Market Data Generators." The 25th IEEE International Symposium on Field-Programmable Custom Computing Machines.
+[1] \hspace{0.5mm} \textbf{Conghui He}, Haohuan Fu, Ce Guo, Wayne Luk, and Guangwen Yang. "A Fully-Pipelined Hardware Design for Gaussian Mixture Models." IEEE Transactions on Computers (2017).
 
-[3] Fu, Haohuan, Conghui He, Huabin Ruan, Itay Greenspon, Wayne Luk, Yongkang Zheng, Junfeng Liao, Qing Zhang, and Guangwen Yang. "Accelerating Financial Market Server through Hybrid List Design." In Proceedings of the 2017 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays, pp. 289-290. 
+[2] \hspace{0.5mm} Fu, Haohuan, \textbf{Conghui He}, Bingwei Chen et al. "18.9-Pflops Nonlinear Earthquake Simulation on Sunway TaihuLight : Enabling Depiction of 18-Hz and 8-Meter Scenarios." In High Performance Computing, Networking, Storage and Analysis, SC17, 2017. (Gordon Bell Prize finalist, also as one of the corresponding authors)
 
-[4] Fu, Haohuan, et al. "Refactoring and optimizing the community atmosphere model (CAM) on the sunway taihulight supercomputer." Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. IEEE Press, 2016.
+[3] \hspace{0.5mm} \textbf{Conghui He}, Fu, Haohuan, Wayne Luk, Weijia Li, and Guangwen Yang. "Exploring the Potential of Reconfigurable Platforms for Order Book Update." In IEEE International Conference on Field-Programmable Logic and Applications (FPL), 2017.
 
-[5] Chen, Yushu, Guangwen Yang, Xiao Ma, Conghui He, and Guojie Song. "A time-space domain stereo finite difference method for 3D scalar wave propagation." Computers \& Geosciences 96 (2016): 218-235.
+[4] \hspace{0.5mm} Fu, Haohuan, \textbf{Conghui He}, Wayne Luk, Weijia Li, and Guangwen Yang. "A Nanosecond-level Hybrid Table Design for Financial Market Data Generators." The 25th IEEE International Symposium on Field-Programmable Custom Computing Machines, 2017.
 
-[6] Chen, Bingwei, Conghui He, Yushu Chen, Haohuan Fu. "Full Wave Inversion Based on EnKF and Source Encoding" In 2016 SEG Annual Meeting. Society of Exploration Geophysicists.
+[5] \hspace{0.5mm} Fu, Haohuan, \textbf{Conghui He}, Huabin Ruan, Itay Greenspon, Wayne Luk, Yongkang Zheng, Junfeng Liao, Qing Zhang, and Guangwen Yang. "Accelerating Financial Market Server through Hybrid List Design." In Proceedings of the 2017 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays, pp. 289-290. 
 
-[7] He, C., Chen, Y., Fu, H., \& Yang, G. Ensemble Full Wave Inversion with Source Encoding. In 77th EAGE Conference and Exhibition 2015.
+[6] \hspace{0.5mm} \textbf{Conghui He}, Haohuan Fu, Yi Shen, Robert Clapp, \& Guangwen Yang. Ensemble Full Wave Inversion with Source Encoding. In 79th EAGE Conference and Exhibition 2017.
 
-[8] He, Conghui, Haohuan Fu, Bangtian Liu, Huabin Ruan, Guangwen Yang, Hui Yang, and Are Osen. "A GPU-based Parallel Beam Migration Design." In 2015 SEG Annual Meeting. Society of Exploration Geophysicists, 2015.
+[7] \hspace{0.5mm} Fu, Haohuan, et al. "Refactoring and optimizing the community atmosphere model (CAM) on the sunway taihulight supercomputer." Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. IEEE Press, 2016.
 
-[9] Clinton, Nicholas, Le Yu, Haohuan Fu, Conghui He, and Peng Gong. "Global-Scale Associations of Vegetation Phenology with Rainfall and Temperature at a High Spatio-Temporal Resolution." Remote Sensing 6, no. 8 (2014): 7320-7338.
+[8] \hspace{0.5mm} Chen, Yushu, Guangwen Yang, Xiao Ma, \textbf{Conghui He}, and Guojie Song. "A time-space domain stereo finite difference method for 3D scalar wave propagation." Computers \& Geosciences 96 (2016): 218-235.
+
+[9] \hspace{0.5mm} Bingwei Chen, \textbf{Conghui He}, Yushu Chen, Haohuan Fu. "Full Wave Inversion Based on EnKF and Source Encoding" In 2016 SEG Annual Meeting. Society of Exploration Geophysicists.
+
+[10] \hspace{0.5mm} \textbf{Conghui He}, Yushu Chen, Haohuan Fu, \& Guangwen Yang. Ensemble Full Wave Inversion with Source Encoding. In 77th EAGE Conference and Exhibition 2015.
+
+[11] \hspace{0.5mm} \textbf{Conghui He}, Haohuan Fu, Bangtian Liu, Huabin Ruan, Guangwen Yang, Hui Yang, and Are Osen. "A GPU-based Parallel Beam Migration Design." In 2015 SEG Annual Meeting. Society of Exploration Geophysicists, 2015.
+
+[12] \hspace{0.5mm} Clinton, Nicholas, Le Yu, Haohuan Fu, \textbf{Conghui He}, and Peng Gong. "Global-Scale Associations of Vegetation Phenology with Rainfall and Temperature at a High Spatio-Temporal Resolution." Remote Sensing 6, no. 8 (2014): 7320-7338.
 \end{cvparagraph}
 
 
