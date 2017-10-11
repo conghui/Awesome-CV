@@ -1,0 +1,120 @@
+\documentclass[localFont]{awesome-source-cv} %alternative
+
+\usepackage{zh_cn-adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zn_cn-adobe/)
+%\usepackage{zh_cn-adobefonts_internal} % Simplified Chinese Support using system fonts
+
+
+
+%\name{}{何聪辉 \hspace{10cm} 岗位名称}
+\name{}{\centerline{何聪辉}}
+
+\tagline{}
+\socialinfo{
+\centerline{
+	\homepage{https://conghui.github.com}
+	\github{conghui}
+	\email{heconghui@gmail.com}
+	\smartphone{(+86) 15311775057}
+	}
+}
+
+\begin{document}
+
+\makecvheader
+
+%\par{
+%{\textbf{简介}} 我是浙江大学信电学院四年级博士生，在李春光教授门下研究\textbf{变分贝叶斯算法及其在分布式网络中的应用}。
+%
+%{\textbf{研究兴趣}} 博士期间，我的研究工作涵盖了很多方面的主题，主要包括：\textbf{变分贝叶斯推断，随机优化，分布式计算，概率图模型，迁移学习，多任务学习和传感器网络}。
+%目前，我对深度学习比较感兴趣，包括各种深度学习框架 (CNN, GAN, Deep Bayesian Learning等) 及其在计算机视觉上的应用（图像处理，视频分析等）。
+%}
+	\vspace{-18mm}
+\sectionTitle{教育背景}{\faMortarBoard}
+\begin{tabular}{rl}
+	\textsc{2013.9 -- 2018.6}		&	\textbf{清华大学}，计算机科学与技术（高性能计算），博士在读，导师：付昊桓  \\
+	\textsc{2016.6 -- 2016.9}		&	\textbf{斯坦福大学}，高性能计算地球科学，访问博士，导师：Bob Clapp \\
+	\textsc{2016.11 -- 2017.6}		&	\textbf{伦敦帝国理工学院}，高性能可重构计算，访问博士，导师：Wayne Luk \\
+	\textsc{2009.9 -- 2013.6}		&	\textbf{中山大学}，软件工程（嵌入式软件工程与系统），本科 \\
+\end{tabular}
+
+\sectionTitle{相关技能}{\faListUl}
+\begin{tabular}{>{}r>{}p{14cm}}
+	\textsc{编程技能:}		&  Linux, C/C++, Java, Bash, Python, Matlab, GPU, FPGA, Pthread, Athread, MPI, OpenMP \\
+	\textsc{高性能计算:} 		&  高性能计算应用算法设计与性能优化，网格计算，云计算，低延迟计算 \\
+	\textsc{英语能力:}	    &  丰富的国际交流和国外生活经历，顺畅的英语口语、阅读和写作能力 \\
+\end{tabular}
+
+\sectionTitle{主要奖励与荣誉}{\faGavel}
+\begin{tabular}{rl}
+	2017年 & 清华大学博士研究生\textbf{国家奖学金}（<5\%） \\
+	2017年 & ACM Gordon Bell Prize（\textbf{戈登贝尔奖}，高性能应用领域最高奖）提名（<10\%）\\
+%	2015年 & 斯伦贝谢计算地球科学\textbf{优秀博士奖学金} \\
+	2013年 & IBM/IEEE 2013智慧地球挑战赛\textbf{全球冠军} \\
+%	2012年 & ASC全球超级计算机竞赛\textbf{第四名} \\
+	2011年 & 中山大学本科生\textbf{国家奖学金} （<1\%）
+\end{tabular}
+
+\sectionTitle{主要项目经历}{\faCode}
+\begin{experiences}
+\experience
+{2016.9 -- 2017.8}   {基于十亿亿次神威太湖之光超级计算机的唐山大地震非线性模拟     \hspace{3.4cm} 项目组长}{}{}{}
+{\begin{itemize}
+	\item 借助神威超算，从计算、通信、带宽和IO等多方面优化唐山大地震模拟应用，完成了1,600,000进程（10,649,600核心）大规模并行计算，是目前规模最大，分辨率最高的地震模拟
+	\item 整体把控项目，负责多层级并行优化方案设计、实时压缩/解压缩算法设计、计算通信重叠
+	\item 相关工作论文被顶级会议SC收录，并获得\textbf{戈登贝尔奖}（高性能应用领域最高奖）提名
+	\item \faGithub \link{https://github.com/conghui/awp-sunway}{https://github.com/conghui/awp-sunway}
+\end{itemize}}{}
+
+\emptySeparator
+\experience
+{2015.5 -- 2016.6}   {基于Maxeler FPGA的低延迟行情服务器     \hspace{7.2cm} 项目组长}{}{}{}
+{\begin{itemize}
+	\item 与中国金融期货交易所合作，设计并实现基于FPGA的行情服务器，降低交易系统的延迟
+	\item 负责设计FPGA-CPU混合分价表，实现网络流在FPGA的实时解析、组装、处理与转发
+	\item 将行情服务器的延迟从100ms降低到3ms，性能提升了33倍，与世界一流水平相当
+	\item 相关工作论文被FPGA, FCCM, FPL会议以及顶级期刊IEEE Trans of Computer收录
+\end{itemize}}{}
+
+\emptySeparator
+\experience
+{2014.1 -- 2015.1}   {基于大规模GPU集群的并行射线偏移算法     \hspace{6.8cm} 项目组长}{}{}{}
+{\begin{itemize}
+	\item 与挪威石油公司（Statoil）合作，在GPU分布式集群移植并优化射线偏移、逆时偏移算法
+	\item 负责数据结构重定义，CUDA核心代码编写，优化计算通信重叠
+	\item 该应用扩展到64个GPU节点，单GPU（K20）性能较16核CPU获得6倍性能提升
+	\item 相关工作经挪威石油公司进一步优化后投入生产，相关论文被SEG会议收录
+\end{itemize}}{}
+
+\end{experiences}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionTitle{主要学术论文}{\faLeanpub}
+
+\begin{itemize}
+	\item \textbf{Conghui He}, Haohuan Fu, Ce Guo, Wayne Luk, and Guangwen Yang. ``A Fully-Pipelined Hardware Design for Gaussian Mixture Models." IEEE Transactions on Computers (2017). \\
+	\vspace{-3.5mm}
+	\item Fu, Haohuan, \textbf{Conghui He}, Bingwei Chen et al. ``18.9-Pflops Nonlinear Earthquake Simulation on Sunway TaihuLight : Enabling Depiction of 18-Hz and 8-Meter Scenarios." In High Performance Computing, Networking, Storage and Analysis, SC17, 2017. (Gordon Bell Prize finalist, also as one of the corresponding authors) \\
+	\vspace{-3mm}
+	\item \textbf{Conghui He}, Fu, Haohuan, Wayne Luk, Weijia Li, and Guangwen Yang. ``Exploring the Potential of Reconfigurable Platforms for Order Book Update." In IEEE International Conference on Field-Programmable Logic and Applications (FPL), 2017. \\
+	\vspace{-3.5mm}
+	\item Fu, Haohuan, \textbf{Conghui He}, Wayne Luk, Weijia Li, and Guangwen Yang. ``A Nanosecond-level Hybrid Table Design for Financial Market Data Generators." In IEEE International Symposium on Field-Programmable Custom Computing Machines, 2017. \\
+	\vspace{-3.5mm}
+	\item \textbf{Conghui He}, Haohuan Fu, Yi Shen, Robert Clapp, \& Guangwen Yang. ``Ensemble Full Wave Inversion with Source Encoding." In 79th EAGE Conference and Exhibition 2017. \\
+	\vspace{-3.5mm}
+	\item \textbf{Conghui He}, Haohuan Fu, Bangtian Liu, Huabin Ruan, Guangwen Yang, Hui Yang, and Are Osen. ``A GPU-based Parallel Beam Migration Design." In 2015 SEG Annual Meeting. Society of Exploration Geophysicists, 2015.\\
+%	\vspace{-3.5mm}
+%	\item Fu, Haohuan, et al. ``Refactoring and optimizing the community atmosphere model (CAM) on the sunway taihulight supercomputer." Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. IEEE Press, 2016. \\
+%	\vspace{-3.5mm}
+%	\item Bingwei Chen, \textbf{Conghui He}, Yushu Chen, Haohuan Fu. ``Full Wave Inversion Based on EnKF and Source Encoding" In 2016 SEG Annual Meeting. Society of Exploration Geophysicists. \\
+%	\vspace{-3.5mm}
+%	\item \textbf{Conghui He}, Yushu Chen, Haohuan Fu, \& Guangwen Yang. Ensemble Full Wave Inversion with Source Encoding. In 77th EAGE Conference and Exhibition 2015. \\
+%	\vspace{-3.5mm}
+%	\item \textbf{Conghui He}, Haohuan Fu, Bangtian Liu, Huabin Ruan, Guangwen Yang, Hui Yang, and Are Osen. ``A GPU-based Parallel Beam Migration Design." In 2015 SEG Annual Meeting. Society of Exploration Geophysicists, 2015.\\
+%	\vspace{-3.5mm}
+%	\item Chen, Yushu, Guangwen Yang, Xiao Ma, \textbf{Conghui He}, and Guojie Song. ``A time-space domain stereo finite difference method for 3D scalar wave propagation." Computers \& Geosciences 96 (2016): 218-235.\\
+%	\item Fu, Haohuan, \textbf{Conghui He}, Huabin Ruan, Itay Greenspon, Wayne Luk, Yongkang Zheng, Junfeng Liao, Qing Zhang, and Guangwen Yang. ``Accelerating Financial Market Server through Hybrid List Design." In Proceedings of the 2017 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays, pp. 289-290. \\
+%	\vspace{-3.5mm}
+\end{itemize}
+\vspace{-0.7cm}
+\hfill（最近更新: 2017年10月10日）
+\end{document}
